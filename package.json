@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
+    "tcr": "npm test && git commit -Am 'Green' || git reset --hard",
     "test": "cucumber-js"
   },
   "author": "",

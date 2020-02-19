@@ -15,7 +15,6 @@ Feature: Simple maths
 
     Examples:
       | var | increment | result |
-      | 100 |         5 |    105 |
-      |  99 |      1234 |   1333 |
-      |  12 |         5 |     17 |
-      
+      | 100 | 5         | 105    |
+      | 99  | 1234      | 1333   |
+      | 12  | 5         | 17     |
