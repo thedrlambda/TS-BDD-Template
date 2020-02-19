@@ -6,15 +6,21 @@
   "scripts": {
     "start": "node src/index.js",
     "tcr": "npm test && git commit -Am 'Green' || git reset --hard",
-    "test": "cucumber-js"
+    "test": "npm run unittest && npm run acceptance",
+    "unittest": "mocha ./spec/*Test.js",
+    "acceptance": "cucumber-js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^13.7.2"
+  },
   "devDependencies": {
     "@types/chai": "^4.2.9",
     "@types/cucumber": "^6.0.1",
+    "@types/mocha": "^7.0.1",
     "chai": "^4.2.0",
-    "cucumber": "^6.0.5"
+    "cucumber": "^6.0.5",
+    "mocha": "^7.0.1"
   }
 }

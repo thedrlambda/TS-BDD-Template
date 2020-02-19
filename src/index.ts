@@ -1,3 +1,4 @@
-import { CustomWorld } from "./CustomWorld";
+import { Application } from "./Application";
 
-new CustomWorld();
+let app = new Application();
+app.run(process.argv.splice(2));
